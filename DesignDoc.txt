@@ -1,0 +1,28 @@
+Rough Design:
+- Check config file against the backup dir, if a file in the config is not in the dir, back it up
+- To backup the file, File IO to add file name to YAML config file
+- Check timestamp of files in config
+- If the modification date is within 60 seconds, backup file to backup location
+- Append backup name so as not to overwrite (add timestamp to name)
+- Add input to config file from cmd line
+- Get timemachine to run every 60 seconds via cron
+
+
+
+Design Decisions:
+- Use YAML for config file
+
+
+
+Failure Modes:
+-
+
+
+
+Testing:
+-
+
+
+Assumptions:
+-
+
