@@ -12,5 +12,5 @@ try:
     num = parseNumber(numstr)
     print("You entered: ",num)
 
-except ValueError as err:
-    print("Incorrect value entered", numstr,"Message:", err)
+except (EOFError, ValueError) as err:
+    print("Error:", err)
